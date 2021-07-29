@@ -8,7 +8,7 @@ library(gbm) #gradient boosting
 install.packages("caret")
 library(caret) #tune hyper-parameters
 
-bcancer=read.table("D:\\KULIAHAN\\sem 7\\DSS\\Project 1\\breastcancer.txt",header=T)
+bcancer=read.table("D:\\...\\breastcancer.txt",header=T)
 head(bcancer)
 str(bcancer)
 summary(bcancer)
