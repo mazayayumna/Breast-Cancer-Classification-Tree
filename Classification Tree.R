@@ -32,7 +32,7 @@ table(rparty.test, testData$diagnosis)
 library(pROC)
 roc_df <- data.frame(
 	TPR=(67/(85+67)), #TPR
-	FPR=(3/(9+63))) #FPR
+	FPR=(3/(9+3))) #FPR
 rectangle <- function(x, y, width, height, density=12, angle=-45, ...) 
   polygon(c(x,x,x+width,x+width), c(y,y+height,y+height,y), 
           density=density, angle=angle, ...)
