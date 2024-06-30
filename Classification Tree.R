@@ -20,6 +20,7 @@ str(trainData[,1])
 set.seed(123)
 tree.biop= rpart(diagnosis~., data=trainData)
 print(tree.biop$cptable)
+#complexity parameter
 cp= min(tree.biop$cptable[3,])
 prune.tree.biop= prune(tree.biop, cp= cp)
 plot(as.party(tree.biop))
