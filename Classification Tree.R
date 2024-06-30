@@ -27,8 +27,8 @@ plot(as.party(prune.tree.biop))
 rparty.test= predict(prune.tree.biop, newdata=testData, type="class")
 table(rparty.test, testData$diagnosis)
 (85+67)/164	# accuracy ~0.927
-(67/(85+67))	#TPR ~0.88
-(3/(9+3))	#FPR ~0.34
+(67/(85+67))	#TPR
+(3/(9+3))	#FPR
 library(pROC)
 roc_df <- data.frame(
 	TPR=(67/(85+67)), #TPR
